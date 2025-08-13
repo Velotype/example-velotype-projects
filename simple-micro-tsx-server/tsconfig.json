@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "f",
+    "listEmittedFiles": true,
+    "sourceMap": true,
+    "lib": [ "dom", "esnext" ],
+    "rewriteRelativeImportExtensions": true
+  }
+}
