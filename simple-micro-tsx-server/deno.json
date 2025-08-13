@@ -1,0 +1,12 @@
+{
+    "tasks": {
+        "bundle": "deno bundle ./browser/hello-velotype.tsx --output ./build/main.js --sourcemap",
+        "bundle-min": "deno bundle --minify ./browser/hello-velotype.tsx --output ./build/main.min.js --sourcemap",
+        "dev-server": "deno run --allow-net --allow-env --allow-sys --allow-ffi --allow-read --watch --inspect ./server/index.ts",
+        "prod-server": "RUN_MODE=local-optimized deno run --allow-net --allow-env --allow-sys --allow-ffi --allow-read ./server/index.ts"
+    },
+    "nodeModulesDir": "auto",
+    "imports": {
+        "@velotype/velotype": "jsr:@velotype/velotype@^0.0.10"
+    }
+}
