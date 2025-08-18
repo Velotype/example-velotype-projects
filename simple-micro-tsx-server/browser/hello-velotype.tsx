@@ -29,6 +29,6 @@ const HelloVelotype: FunctionComponent<EmptyAttrs> = function(): HTMLDivElement 
     </div>
 }
 
-// Append to the page
+// Place on the page
 const element = document.getElementById("main-page")
-element?.appendChild(<HelloVelotype/>)
+element?.replaceWith(<HelloVelotype/>)
