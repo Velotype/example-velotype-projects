@@ -1,0 +1,46 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@std/encoding@^1.0.10": "1.0.10",
+    "jsr:@std/encoding@^1.0.7": "1.0.7",
+    "jsr:@std/http@1": "1.0.20",
+    "jsr:@std/media-types@1": "1.1.0",
+    "jsr:@velotype/velotype@*": "0.0.12",
+    "jsr:@velotype/velotype@^0.0.12": "0.0.12"
+  },
+  "jsr": {
+    "@std/encoding@1.0.7": {
+      "integrity": "f631247c1698fef289f2de9e2a33d571e46133b38d042905e3eac3715030a82d"
+    },
+    "@std/encoding@1.0.10": {
+      "integrity": "8783c6384a2d13abd5e9e87a7ae0520a30e9f56aeeaa3bdf910a3eaaf5c811a1"
+    },
+    "@std/http@1.0.13": {
+      "integrity": "d29618b982f7ae44380111f7e5b43da59b15db64101198bb5f77100d44eb1e1e",
+      "dependencies": [
+        "jsr:@std/encoding@^1.0.7"
+      ]
+    },
+    "@std/http@1.0.20": {
+      "integrity": "b5cc33fc001bccce65ed4c51815668c9891c69ccd908295997e983d8f56070a1",
+      "dependencies": [
+        "jsr:@std/encoding@^1.0.10"
+      ]
+    },
+    "@std/media-types@1.1.0": {
+      "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
+    },
+    "@velotype/velotype@0.0.12": {
+      "integrity": "9964c5fee0ab1b22524b73379ad644576a81e7cc3d098570a8819eefcda11c56",
+      "dependencies": [
+        "jsr:@std/http",
+        "jsr:@std/media-types"
+      ]
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@velotype/velotype@^0.0.12"
+    ]
+  }
+}
