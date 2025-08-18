@@ -1,0 +1,18 @@
+{
+    "tasks": {
+        "bundle-velotype-jsx": "deno bundle jsr:@velotype/velotype/jsx-runtime --output ./build/velotype-jsx-runtime.mjs --sourcemap",
+        "bundle-velotype-jsx-min": "deno bundle --minify jsr:@velotype/velotype/jsx-runtime --output ./build/velotype-jsx-runtime.min.mjs --sourcemap",
+        "bundle-velotype-jsxdev": "deno bundle jsr:@velotype/velotype/jsx-dev-runtime --output ./build/velotype-jsx-dev-runtime.mjs --sourcemap",
+        "bundle-velotype-jsxdev-min": "deno bundle --minify jsr:@velotype/velotype/jsx-dev-runtime --output ./build/velotype-jsx-dev-runtime.min.mjs --sourcemap",
+        "bundle1": "deno bundle ./browser/hooks-demo.tsx --output ./build/hooks-demo.mjs --sourcemap --external jsr:@velotype/velotype",
+        "bundle1-min": "deno bundle --minify ./browser/hooks-demo.tsx --output ./build/hooks-demo.min.mjs --sourcemap --external jsr:@velotype/velotype",
+        "bundle2": "deno bundle ./browser/media-demo.tsx --output ./build/media-demo.mjs --sourcemap --external jsr:@velotype/velotype",
+        "bundle2-min": "deno bundle --minify ./browser/media-demo.tsx --output ./build/media-demo.min.mjs --sourcemap --external jsr:@velotype/velotype",
+        "dev-server": "deno run --allow-net --allow-env --allow-sys --allow-ffi --allow-read --watch --inspect ./server/index.ts",
+        "prod-server": "RUN_MODE=local-optimized deno run --allow-net --allow-env --allow-sys --allow-ffi --allow-read ./server/index.ts"
+    },
+    "nodeModulesDir": "auto",
+    "imports": {
+        "@velotype/velotype": "jsr:@velotype/velotype@^0.0.12"
+    }
+}
