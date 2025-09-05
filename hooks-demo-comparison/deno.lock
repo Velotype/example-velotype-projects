@@ -5,8 +5,8 @@
     "jsr:@std/encoding@^1.0.7": "1.0.7",
     "jsr:@std/http@1": "1.0.20",
     "jsr:@std/media-types@1": "1.1.0",
-    "jsr:@velotype/velotype@*": "0.0.12",
-    "jsr:@velotype/velotype@^0.0.12": "0.0.12"
+    "jsr:@velotype/velotype@*": "0.0.17",
+    "jsr:@velotype/velotype@^0.0.17": "0.0.17"
   },
   "jsr": {
     "@std/encoding@1.0.7": {
@@ -30,8 +30,8 @@
     "@std/media-types@1.1.0": {
       "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
     },
-    "@velotype/velotype@0.0.12": {
-      "integrity": "9964c5fee0ab1b22524b73379ad644576a81e7cc3d098570a8819eefcda11c56",
+    "@velotype/velotype@0.0.17": {
+      "integrity": "799f2b49e2f1802a4fa540d7ca2da9693a9593aee2596249fce3610ecd8dae2d",
       "dependencies": [
         "jsr:@std/http",
         "jsr:@std/media-types"
@@ -40,7 +40,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@velotype/velotype@^0.0.12"
+      "jsr:@velotype/velotype@^0.0.17"
     ]
   }
 }
