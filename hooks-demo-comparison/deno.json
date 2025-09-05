@@ -13,6 +13,6 @@
     },
     "nodeModulesDir": "auto",
     "imports": {
-        "@velotype/velotype": "jsr:@velotype/velotype@^0.0.12"
+        "@velotype/velotype": "jsr:@velotype/velotype@^0.0.17"
     }
 }
