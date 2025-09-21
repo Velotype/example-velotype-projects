@@ -7,6 +7,7 @@
     },
     "nodeModulesDir": "auto",
     "imports": {
-        "@velotype/velotype": "jsr:@velotype/velotype@^0.0.10"
+        "@velotype/veloserver": "jsr:@velotype/veloserver@^0.0.2",
+        "jsr:@velotype/velomicro": "jsr:@velotype/velomicro@^0.0.1"
     }
 }

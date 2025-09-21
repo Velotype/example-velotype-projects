@@ -1,6 +1,4 @@
-/// <reference lib="dom" />
-
-import {h, FunctionComponent, EmptyAttrs} from "jsr:@velotype/velotype/tsx-micro"
+import {h, FunctionComponent, EmptyAttrs} from "jsr:@velotype/velomicro/tsx-micro"
 
 type CounterAttrsType = {startingValue?: number}
 const Counter: FunctionComponent<CounterAttrsType> = function(attrs: CounterAttrsType): HTMLDivElement {
