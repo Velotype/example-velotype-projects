@@ -17,11 +17,11 @@ const Counter: FunctionComponent<CounterAttrsType> = function(attrs: CounterAttr
     </div>
 }
 
-const HelloVelotype: FunctionComponent<EmptyAttrs> = function(): HTMLDivElement {
+const HelloVelomicro: FunctionComponent<EmptyAttrs> = function(): HTMLDivElement {
     return <div>
         <div id="hello-tsx" disabled="">
-            <div title="hello message">Hello Velotype</div>
-            <span style="font-weight:bold;">TSX-Micro!</span>
+            <div title="hello message">Hello</div>
+            <span style="font-weight:bold;">Velomicro!</span>
             <Counter startingValue={4}/>
         </div>
     </div>
@@ -29,4 +29,4 @@ const HelloVelotype: FunctionComponent<EmptyAttrs> = function(): HTMLDivElement 
 
 // Place on the page
 const element = document.getElementById("main-page")
-element?.replaceWith(<HelloVelotype/>)
+element?.replaceWith(<HelloVelomicro/>)
