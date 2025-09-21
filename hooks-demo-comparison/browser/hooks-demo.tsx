@@ -1,5 +1,4 @@
 // deno-lint-ignore-file no-explicit-any
-/// <reference lib="dom" />
 
 import {replaceElementWithRoot, Component, EmptyAttrs, RenderBasic, TargetedInputEvent} from "jsr:@velotype/velotype"
 
