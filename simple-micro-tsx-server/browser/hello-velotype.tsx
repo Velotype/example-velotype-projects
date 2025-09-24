@@ -21,7 +21,7 @@ const HelloVelomicro: FunctionComponent<EmptyAttrs> = function(): HTMLDivElement
     return <div>
         <div id="hello-tsx" disabled="">
             <div title="hello message">Hello</div>
-            <span style="font-weight:bold;">Velomicro!</span>
+            <span style={{fontWeight: "bold"}}>Velomicro!</span>
             <Counter startingValue={4}/>
         </div>
     </div>
