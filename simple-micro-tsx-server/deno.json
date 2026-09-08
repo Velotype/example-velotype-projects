@@ -1,11 +1,16 @@
 {
     "tasks": {
-        "bundle": "deno bundle ./browser/hello-velotype.tsx --output ./build/main.js --sourcemap",
-        "bundle-min": "deno bundle --minify ./browser/hello-velotype.tsx --output ./build/main.min.js --sourcemap",
+        "bundle": "deno bundle ./browser/hello-velotype.tsx --output ./build/main.js --sourcemap=linked",
+        "bundle-min": "deno bundle --minify ./browser/hello-velotype.tsx --output ./build/main.min.js --sourcemap=linked",
         "dev-server": "deno run --allow-net --allow-env --allow-sys --allow-ffi --allow-read --watch --inspect ./server/index.ts",
         "prod-server": "RUN_MODE=local-optimized deno run --allow-net --allow-env --allow-sys --allow-ffi --allow-read ./server/index.ts"
     },
-    "nodeModulesDir": "auto",
+    "compilerOptions": {
+        "jsx": "react",
+        "jsxFactory": "h",
+        "jsxFragmentFactory": "f",
+        "lib": ["dom", "esnext"]
+    },
     "imports": {
         "@velotype/veloserver": "jsr:@velotype/veloserver@^0.0.2",
         "jsr:@velotype/velomicro": "jsr:@velotype/velomicro@^0.0.1"
